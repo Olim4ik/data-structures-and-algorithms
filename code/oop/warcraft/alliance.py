@@ -7,7 +7,6 @@ class Alliance(Race):
         super().__init__("Alliance")
 
     def voice(self):
-        """Override the abstract method in the Race base class"""
         return f"I am an {self}"
 
 
@@ -18,8 +17,7 @@ aliiance_race_2 = Alliance()
 print("Alliance 1:", alliance_race_1)
 print("Alliance 2:", aliiance_race_2)
 
-print(alliance_race_1 is aliiance_race_2)  # True
+print(alliance_race_1 is aliiance_race_2)
 
-# Printing race count and all races
 print(f"Total races created: {Race.race_count()}")
 Race.display_all_races()
